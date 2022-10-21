@@ -1,0 +1,157 @@
+.App {
+  /* text-align: center; */
+  display: block;
+}
+
+.contAppbody{
+  background-color: white;
+  top: 52px;
+  width: 100%;
+  /* height: 3000px; */
+  overflow: auto;
+  display: block;
+  position: relative;
+}
+
+
+.App-footer {
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+/* HEADER CSS : begin */
+.Appheader {
+  background-color: #fff;
+  width: 100%;
+  height: 52px;
+  border-radius: 2px;
+  top: 0px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15),0 0px 2px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  color: white;
+  z-index: 10;
+  min-width: 515px;
+}
+
+.slbtn {
+  display: flex;
+  background-color: white;
+  font-size: 14px;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 70px;
+  height: calc(100% - 15px);
+  border: 1px solid grey;
+  top: 7px;
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+}
+.loginbtn{
+  right: 50px;
+}
+.userbtn{
+  right: 150px;
+}
+.signupbtn{
+  right: 140px;
+}
+
+.homelink {
+  background-color: white;
+  font-size: 14px;
+  color: black;
+  top: 15px;
+  position: absolute;
+  right: 400px;
+}
+
+.questionlink {
+  background-color: white;
+  font-size: 14px;
+  color: black;
+  top: 15px;
+  position: absolute;
+  right: 310px;
+}
+
+.slbtn:hover {
+  background-color: #f1356d;
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+  color: white;
+}
+/* HEADER CSS : end */
+
+/* LOGIN & SIGNUP PAGE CSS : begin*/
+.lspagelocreate {
+  max-width: 400px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 150px;
+  display: block;
+}
+.lspagelogin {
+    height: 1000px;
+    margin-left: 250px;
+    margin-right: 250px;
+    min-width: 515px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px 0px 2px rgba(0,0,0,0.15),1px 0px 2px rgba(0,0,0,0.1);
+}
+@media screen and (max-width: 780px) {
+  .lspagelogin{
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+}
+.lspagelogin label {
+  text-align: left;
+  display: block;
+}
+.lspagelogin h2 {
+  margin-left: calc(50% - 28px);
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.lspagelogin input, .lspagelogin textarea, .lspagelogin select {
+  padding: 6px 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.lspagelogin input:focus{
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+.lspagelogin button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-left: calc(50% - 30px);
+}
+.lspagelogin button:hover{
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+/* LOGIN & SIGNUP PAGE CSS : end*/

@@ -1,0 +1,672 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.fa-search:before {
+    content: "\f002";
+}
+
+.t20{
+    top: 20px;
+}
+
+.sec2{
+    height: 1000px;
+    margin-left: 250px;
+    margin-right: 250px;
+    min-width: 515px;
+    display: flex;
+    justify-content: center;
+    box-shadow: -1px 0px 2px rgba(0,0,0,0.15),1px 0px 2px rgba(0,0,0,0.1);
+    /* transition: margin-left .4s; */
+}
+
+.sec2q{
+    overflow: auto;
+    position: relative;
+    min-height: 1000px;
+    margin-left: 250px;
+    margin-right: 250px;
+    min-width: 515px;
+    display: block;
+    box-shadow: -1px 0px 2px rgba(0,0,0,0.15),1px 0px 2px rgba(0,0,0,0.1);
+    /* transition: margin-left .4s; */
+}
+
+@media screen and (max-width: 987px) {
+    .sec2{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .sec2q{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+/* SEARCH BAR */
+.search-icon {
+    display: none;
+    filter: invert(1);
+}
+.search-icon:hover {
+    cursor: pointer;
+}
+.small-search {
+    width: 100%;
+    height: 30px;
+    /* position: relative; */
+    top: 69px;
+    left: 5px;
+    border-radius: 2px;
+}
+  
+.small-search-form {
+    /* position: absolute; */
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 20px);
+    height: 35px;
+    background-color: #00000042;
+}
+  
+.small-search-icon {
+    /* position: fixed; */
+    top: 80px;
+    right: 5%;
+}
+/* ---- */
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+  
+.searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+  
+.searchTerm:focus{
+    color: black;
+}
+  
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+.searchButton:hover{
+    background-color: #077d8d;
+}
+  
+  /*Resize the wrap to see the search bar change!*/
+.wrap{
+    width: 90%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+  /* SEARCH BAR END */
+.asklink{
+    text-decoration: none;
+    color: black;
+    border-radius: 2px;
+    border: 2px solid #00B4CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+.asklink:hover{
+    background-color: #077d8d;
+    color: white;
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+/* SORT SECTION */
+.sortsec{
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15),0 0px 2px rgba(0,0,0,0.1);
+}
+.sortsecselectcont{
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* question list */
+.qlist{
+    display: block;
+    overflow-wrap: break-word;
+    min-height: 100px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15),0 0px 2px rgba(0,0,0,0.1);
+}
+.qitem{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.qitemL{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.vitem{
+    height: auto;
+    padding: 2px 0px 2px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    font-size: small;
+}
+.vts{
+    display: flex;
+    float: left;
+    width: auto;
+    padding-left: 20px;
+}
+.titem{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 50px;
+    align-items: center;
+    float: right;
+    height: 100%;
+    width: auto;
+}
+.whitem{
+    display: flex;
+    height: 20px;
+    margin-top: 1px;
+    padding-left: 20px;
+    padding-top: 1px;
+    font-size: small;
+}
+
+/* Single question page */
+
+/* The question */
+.singleqshead{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.sqdvcont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 1px 0px rgba(0,0,0,0.15),0px -1px rgba(0,0,0,0.1);
+}
+.sqbstyle{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: white;
+    top: 12.5px;
+}
+.sqbstyle:hover{
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+.sqbp{
+    left: 10px;
+}
+.sqbm{
+    left: 40px;
+}
+.sqvcc{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    left: 25px;
+}
+.sqab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: auto;
+    height: 50px;
+    margin-left: auto;
+}
+.sqtc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10px;
+    width: auto;
+    height: 50px;
+    margin-right: auto;
+}
+.anlist{
+    position: relative;
+    top: 20px;
+}
+
+/* ASK PAGE */
+.askpagesubmitbtncont{
+    display:flex;
+    flex-direction:column;
+    margin-left: auto;
+    margin-right: 10px;
+    height:40px;
+    position:relative;
+}
+.askpagesubmitbtncont button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 2px;
+    font-size: medium;
+}
+.askpagesubmitbtncont button:hover{
+    color: white;
+    background-color: #2684FF;
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+.dummydiv{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 120px;
+}
+
+.txtcont{
+    display: block;
+    position: relative;
+    padding: 10px;
+    width: calc(100%-20px);
+}
+.txtarea{
+    display: flex;
+    border: 1px solid #ddd;
+    position: relative;
+    resize: vertical;
+    font-size: 15px;
+    width: 100%;
+}
+.asktxttitle{
+    min-height: 30px;
+    max-height: 100px;
+    padding: 2px;
+}
+.asktxttitle:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.asktxtbody{
+    min-height: 300px;
+    padding: 2px;
+}
+.asktxtbody:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.canCleEdt{
+    display :flex;
+    justify-content: center;
+    align-items:center;
+    border:1px solid silver;
+    padding:2px;
+    border-radius:3px;
+    position:absolute;
+    width:auto;
+    height:20px;
+    right:10px;
+    font-size:12px;
+    font-weight:200;
+}
+.canCleEdt:hover{
+    cursor: pointer;
+}
+
+.instcont{
+    display: flex;
+    width: calc(100%-20px);
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.instcodecont code, .instcodecont div{
+    font-family: "Cascadia Mono","Segoe UI Mono","Liberation Mono",Menlo,Monaco,Consolas,monospace;
+    padding: 2px 4px 2px 4px;
+    height: auto;
+    width: auto;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: rgb(241, 242, 243);
+    color: hsl(210,8%,15%);
+    border:1px solid hsl(210,8%,15%);;
+    border-radius: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.instboldcont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.instboldcontd1{
+    font-weight: 600;
+    font-family: "Segoe UI Mono","Liberation Mono",Menlo,Monaco,Consolas,monospace;
+    font-size: 13px;
+    height: auto;
+    width: auto;
+}
+.instboldcontd2{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 13px;
+    height: auto;
+    width: auto;
+    font-style: italic;
+}
+
+.revcont{
+    padding: 10px 20px;
+    
+    background-color: white;
+    overflow-wrap: break-word;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.revcont div{
+    overflow-y: scroll;
+}
+.revcont blockquote{
+    position: relative;
+}
+.revcont blockquote::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    border-radius: 8px;
+    background-color: rgb(200, 204, 208);
+}
+
+.revcont p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 150%;
+}
+.revcont blockquote p{
+    padding: 10px;
+}
+.revcont li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* ASK PAGE end */
+
+/* PagQsList page : list of questions in multiple page : begin */
+
+.PagQsListpagination{
+    list-style: none;
+    display: flex;
+    position: relative;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: medium;
+    gap: 1px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.PagQsListpagination li{
+    text-align: center;
+}
+
+.PagQsListpagenum{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    height: 20px;
+    width: 20px;
+}
+.previous a{
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.next a{
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font-weight: 400;
+}
+.PagQsListpagination .PagQsListpagenum:hover{
+    background-color: #5AB1BB;
+    color: #fff;
+}
+.PagQsListpagination .PagQsListactive{
+    background-color: #5AB1BB;
+}
+
+.ansidcont{
+    display: flex;
+    position: absolute;
+    font-size: small;
+    right: 4px;
+    margin-bottom: 5px;
+    top: -55px;
+    height: 80px;
+    width: 20px;
+    align-items: flex-end;
+}
+.ansidcont img{
+    display: inline;
+    width: 20px;
+    height: 20px;
+}
+.ansidcont:hover{
+    cursor: pointer;
+}
+.editic{
+    display: inline;
+    position: absolute;
+    bottom: -18px;
+    right: 4px;
+}
+.editic:hover{
+    cursor: pointer;
+}
+.notify{
+    display: block;
+    position: fixed;
+    z-index: 101;
+    border: 1px solid #ddd;
+    background-color: black;
+    font-size: small;
+    visibility: hidden;
+    color: white;
+    bottom: 10px;
+    right: 10px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.show{
+    visibility: hidden;
+    animation-name: nV;
+    animation-duration: 2s;
+}
+@keyframes nV{
+    0%{
+        visibility: visible;
+    } 100% {
+        visibility: hidden;
+    }
+}
+/* PagQsList page : list of questions in multiple page : end */
+
+pre div{
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+.tcont{
+    margin-bottom: 16px;
+}
+
+code::-webkit-scrollbar,pre div::-webkit-scrollbar,.txtarea::-webkit-scrollbar,.tcont::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+}
+
+code::-webkit-scrollbar-track, pre div::-webkit-scrollbar-track, .txtarea::-webkit-scrollbar-track,.tcont::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+code::-webkit-scrollbar-thumb, pre div::-webkit-scrollbar-thumb, .txtarea::-webkit-scrollbar-thumb,.tcont::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(198, 202, 205);
+}
+
+code::-webkit-scrollbar-corner, pre div::-webkit-scrollbar-corner, .txtarea::-webkit-scrollbar-corner,.tcont::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.tcontdiv{
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-bottom: 16px;
+}
+
+.revcont table{
+    display: table;
+    width: 100%;
+    word-wrap: break-word;
+    text-indent: initial;
+    vertical-align: baseline;
+    text-align: left;
+    font-stretch: 100%;
+    line-height: 19.5px;
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 13px;
+    overflow-wrap: break-word;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgb(214, 217, 220);
+}
+.revcont thead{
+    vertical-align: baseline;
+}
+.revcont th{
+    border: 1px solid rgb(214, 217, 220);
+    background-color: rgb(248, 249, 249);
+    padding: 8px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+.revcont tbody{
+    border-color:rgb(35, 38, 41);
+    vertical-align: baseline;
+}
+
+.revcont td{
+    border-top: 1px solid rgb(214, 217, 220);
+    border-left: 1px solid rgb(214, 217, 220);
+    border-right: 1px solid rgb(214, 217, 220);
+    vertical-align: middle;
+    padding: 8px;
+}
